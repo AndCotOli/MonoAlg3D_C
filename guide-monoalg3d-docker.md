@@ -26,5 +26,5 @@ Both a CPU-only and a GPU versions are provided.
 ```
 3. Run the image in interactive mode
 ```sh
-    $ docker run -it monoalg3d:gpu
+    $ docker run -it --gpus=all monoalg3d:gpu
 ```

@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y \
 COPY . monoalg
 WORKDIR monoalg
 
-RUN ./build.sh clean || true
+RUN ./build.sh clean
 RUN ./build.sh disable_cuda simulator || true
 CMD ["bash"]
