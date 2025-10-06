@@ -16,6 +16,8 @@ Fedora: Refer to [the fedora guide](guide-monoalg3d-fedora.md)
 
 Windows: Refer to [the windows guide](guide-monoalg3d-windows.md)
 
+Docker: Refer to [the docker guide](guide-monoalg3d-docker.md)
+
 ### Compile
 ```sh
 $ ./build.sh
@@ -68,8 +70,6 @@ Oliveira RS, Rocha BM, Burgarelli D, Meira Jr W, Constantinides C, dos Santos RW
 
 # Credits
 [Heart icons created by phatplus - Flaticon](https://www.flaticon.com/free-icons/heart)
-
-Of course. Here is the appendix formatted as a Markdown file with the title, authors, and a link for each publication.
 
 # Research utilizing MonoAlg3D (not all, not sorted)
 

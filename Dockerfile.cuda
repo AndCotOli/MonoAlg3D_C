@@ -1,0 +1,16 @@
+FROM nvidia/cuda:13.0.1-devel-ubuntu24.04
+
+# HACK: Set CI to true so the correct ENV vars are set.
+ENV CI=true
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    make \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . monoalg
+WORKDIR monoalg
+
+RUN ./build.sh clean || true
+RUN ./build.sh simulator || true
+CMD ["bash"]
